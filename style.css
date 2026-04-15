@@ -28,7 +28,9 @@ ul {
     color: #ffffff;
 }
 
-
+img {
+    width: 200px;
+}
 
 .container {
     max-width: 1200px;
@@ -103,9 +105,102 @@ p, h1, h4, .btn {
     letter-spacing: 0.1em;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
 }
 
 span {
     color: blue;
     font-family: "Roboto", sans-serif;
+}
+
+.container-tickets {
+    width: 1200px;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.our-band {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.block-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text {
+    text-align: center;
+    padding: 15px;
+}
+
+.members {
+    width: 200px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #25343F;
+}
+
+.reserv-tickets {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #25343F;
+}
+
+.place p {
+    margin: 0;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 180px;
+    align-items: center;
+    border: 1px solid #2A4759;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.order-btn {
+    background-color: #C70039;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.image-right {
+    float: right;
+    width: 400px;
+    margin: 0 20px 10px 0;
+}
+
+.our-story {
+    width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #151515, #35222b, #3e2233);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.story {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.textStory {
+    font-size: 12px;
 }
