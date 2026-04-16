@@ -42,8 +42,13 @@ img {
     width: 200px;
 }
 
+button {
+    transition: 0.3s;
+}
+
 button:hover {
     cursor: pointer;
+    opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -363,9 +368,6 @@ textarea {
     margin-left: 10px;
 }
 
-.p-social {
-    margin-top: 0;
-}
 
 .modal {
     display: none;
@@ -377,6 +379,7 @@ textarea {
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
+    z-index: 2000;
 }
 
 .modal-content {
@@ -392,9 +395,9 @@ textarea {
     z-index: 1000;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .modal-content-second {
@@ -418,13 +421,6 @@ textarea {
     cursor: pointer;
 }
 
-.modal {
-    z-index: 1000;
-}
-
-.modal-second {
-    z-index: 2000;
-}
 
 @media (max-width: 768px) {
 
