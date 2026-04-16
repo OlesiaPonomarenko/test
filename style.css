@@ -21,6 +21,16 @@ a {
     color: #ffffff;
 }
 
+.container,
+.container-hero,
+.container-tickets,
+.our-story,
+.contakt,
+.footer {
+    max-width: 1200px;
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -32,16 +42,39 @@ img {
     width: 200px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .block-contact {
+        flex-direction: column;
+    }
+
+    .form,
+    .maps {
+        width: 100%;
+    }
+
+    .block-members {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 
 .nav-header {
     display: flex;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -65,7 +98,6 @@ img {
     display: flex;
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1200px;
     height: 500px;
     background-image: url(./img/Koncertas\ su\ šviesų\ spinduliais.jpg);
     background-size: cover;
@@ -114,7 +146,6 @@ span {
 }
 
 .container-tickets {
-    width: 1200px;
     background-color: black;
     color: #ffffff;
     display: flex;
@@ -189,7 +220,6 @@ span {
 }
 
 .our-story {
-    width: 1200px;
     margin: 0 auto;
     background: linear-gradient(to bottom right, #151515, #35222b, #3e2233);
     color: #ffffff;
@@ -217,7 +247,6 @@ span {
 }
 
 .contakt {
-    width: 1200px;
     margin: 0 auto;
     background: linear-gradient(to top left, #151515, #35222b, #3e2233);
     display: flex;
@@ -277,6 +306,7 @@ span {
     border: 1px solid #2A4759;
     border-radius: 6px;
     background-color: #25343F;
+    color: #ffffff;
 }
 .btnChange {
     align-self: flex-start;
@@ -287,11 +317,196 @@ textarea {
     min-height: 100px;
     background-color: #25343F;
     font-family: "Roboto", sans-serif;
+    color: #ffffff;
 }  
 
 
 .footer {
-    width: 1200px;
     margin: 0 auto;
     background-color: #151515;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.block-footer {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emailandphone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    position: relative;
+}
+
+.social a:not(:last-child)::after {
+    content: "•";
+    margin-left: 10px;
+}
+
+.p-social {
+    margin-top: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modalSecond {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-second {
+    background: #1f1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-modal-second {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal {
+    z-index: 1000;
+}
+
+.modal-second {
+    z-index: 2000;
+}
+
+@media (max-width: 768px) {
+
+
+    .container,
+    .container-hero,
+    .container-tickets,
+    .our-story,
+    .contakt,
+    .footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    
+    .nav-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .place {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .place button {
+        justify-self: center;
+    }
+
+    .block-members {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .members {
+        width: 80%;
+    }
+
+
+    .image-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    
+    .block-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form,
+    .maps {
+        width: 100%;
+    }
+
+    
+    .form-row {
+        flex-direction: column;
+    }
+
+    
+    .block-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .contacts {
+        justify-content: center;
+    }
+
+    .social {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
