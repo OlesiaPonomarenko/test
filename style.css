@@ -130,6 +130,7 @@ span {
     flex-direction: column;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .block-members {
@@ -199,8 +200,98 @@ span {
 .story {
     margin-top: 20px;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 .textStory {
     font-size: 12px;
+}
+
+.map {
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    border: 0;
+    border-radius: 5px;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+.contakt {
+    width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to top left, #151515, #35222b, #3e2233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.block-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.p-message {
+    margin-top: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    padding-top: 20px;
+}
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    background-color: #25343F;
+    border-radius: 5px;
+}
+
+.p-place {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.text-input {
+    padding: 10px;
+    border: 1px solid #2A4759;
+    border-radius: 6px;
+    background-color: #25343F;
+}
+.btnChange {
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+textarea {
+    min-height: 100px;
+    background-color: #25343F;
+    font-family: "Roboto", sans-serif;
+}  
+
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #151515;
 }
